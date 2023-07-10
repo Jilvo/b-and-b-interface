@@ -11,12 +11,12 @@
   </head>
   <body>
     <h1 class="text-3xl font-bold underline">Hello world!</h1>
-    <section id="title">
+    <section id="title" class="mx-48">
       <div>
-        <p class="text-xl mx-48">
+        <p class="text-3xl font-medium">
           Villa Gabrielle vue exceptionnelle sur la mer
         </p>
-        <div class="flex justify-between mx-48">
+        <div class="flex justify-between">
           <div class="flex gap-2">
             <div class="flex items-center gap-2">
               <i class="fas fa-star"></i>
@@ -41,7 +41,9 @@
       </div>
     </section>
     <section id="images">
-      <div class="grid mx-48 grid-cols-4 grid-rows-2 rounded-full gap-2">
+      <div
+        class="grid mx-48 grid-cols-4 grid-rows-2 rounded-3xl overflow-hidden h-96 gap-x-2 gap-x-2"
+      >
         <img
           src="static/images/location_pic_1.webp"
           alt=""
@@ -68,6 +70,51 @@
           class="col-span-1 row-span-1"
         />
       </div>
+    </section>
+    <section id="main_description" class="mx-48">
+      <div class="flex flex-row">
+        <div class="flex flex-col">
+          <div class="text-xl font-medium">
+            Logement entier : villa ⸱ Chez Bernard
+          </div>
+          <div>6 voyageurs · 3 chambres· 3 lits· 3 salles de bain</div>
+        </div>
+        <div class="w-16 h-16 rounded-full overflow-hidden">
+          <img
+            src="static/images/users_pic/user_1.jpg"
+            alt="Photo de profil"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+      <div class="h-0.5 bg-gray-400"></div>
+      <div>
+        <div class="flex flex-row mt-2">
+          <i class="fas fa-trophy mr-5"></i>
+          <div class="flex flex-col">
+            <p class="text-xl font-medium">Hôte très bien évalué</p>
+            <div>
+              Bernard a reçu des évaluations 5 étoiles de 95 % de voyageurs
+              récents.
+            </div>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="flex flex-row mt-2">
+          <i class="far fa-comments mr-5"></i>
+          <div class="flex flex-col">
+            <div class="text-xl font-medium">Excellente communication</div>
+            <div>
+              90 % de voyageurs récents ont attribué 5 étoiles à Bernard pour la
+              communication.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-0.5 bg-gray-400"></div>
     </section>
   </body>
 </html>
