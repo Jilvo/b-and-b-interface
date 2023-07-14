@@ -171,7 +171,53 @@
         </div>
       </div>
       <section id="booking">
-        <div>PA</div>
+        <div class="text-center border border-gray-300 rounded-lg p-4 shadow">
+          <h2 class="text-2xl">Ajoutez des dates pour voir le prix</h2>
+          <div class="flex items-center justify-center">
+            <i class="fas fa-star"></i>
+            <p>5.0</p>
+            <p>·</p>
+            <p>7 commentaires</p>
+          </div>
+          <div class="grid grid-cols-2 grid-rows-2 gap-4">
+            <div>
+              <label for="date-arrivee">Date d'arrivée</label>
+              <input
+                type="date"
+                id="date-arrivee"
+                placeholder="Ajouter une date"
+                class="border border-gray-300 rounded p-2"
+              />
+            </div>
+            <div>
+              <label for="date-depart">Date de départ</label>
+              <input
+                type="date"
+                id="date-depart"
+                placeholder="Ajouter une date"
+                class="border border-gray-300 rounded p-2"
+              />
+            </div>
+            <div class="col-span-2 border-t border-gray-300"></div>
+            <div class="col-span-2">
+              <label for="nombre-voyageurs">Nombre de voyageurs</label>
+              <select
+                id="nombre-voyageurs"
+                class="border border-gray-300 rounded p-2"
+              >
+                <option value="1">1 voyageur</option>
+                <option value="2">2 voyageurs</option>
+                <option value="3">3 voyageurs</option>
+                <!-- Ajoutez les autres options de votre choix -->
+              </select>
+            </div>
+          </div>
+          <button
+            class="bg-gradient-to-l from-pink-500 to-red-500 text-white py-2 px-4 rounded-lg mt-4"
+          >
+            Vérifier la disponibilité
+          </button>
+        </div>
       </section>
     </section>
     <script src="static/scripts/script.js"></script>
