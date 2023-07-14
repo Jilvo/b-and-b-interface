@@ -16,7 +16,7 @@
         <p class="text-3xl font-medium">
           Villa Gabrielle vue exceptionnelle sur la mer
         </p>
-        <div class="flex justify-between">
+        <div class="flex justify-between my-5">
           <div class="flex gap-2">
             <div class="flex items-center gap-2">
               <i class="fas fa-star"></i>
@@ -71,103 +71,108 @@
         />
       </div>
     </section>
-    <section id="main_description" class="mx-48">
-      <div class="flex flex-row">
-        <div class="flex flex-col">
-          <div class="text-xl font-medium">
-            Logement entier : villa ⸱ Chez Bernard
-          </div>
-          <div>6 voyageurs · 3 chambres· 3 lits· 3 salles de bain</div>
-        </div>
-        <div class="w-16 h-16 rounded-full overflow-hidden">
-          <img
-            src="static/images/users_pic/user_1.jpg"
-            alt="Photo de profil"
-            class="w-full h-full object-cover"
-          />
-        </div>
-      </div>
-      <div class="h-0.5 bg-gray-400"></div>
-      <div>
-        <div class="flex flex-row mt-2 items-center">
-          <i class="fas fa-trophy mr-5"></i>
+    <section id="main_description_booking" class="mx-48 flex">
+      <div id="main_description " class="w-4/6">
+        <div class="flex flex-row">
           <div class="flex flex-col">
-            <p class="text-xl font-medium">Hôte très bien évalué</p>
-            <div>
-              Bernard a reçu des évaluations 5 étoiles de 95 % de voyageurs
-              récents.
+            <div class="text-xl font-medium">
+              Logement entier : villa ⸱ Chez Bernard
             </div>
+            <div>6 voyageurs · 3 chambres· 3 lits· 3 salles de bain</div>
           </div>
-          <div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
-        <div class="flex flex-row mt-2 items-center">
-          <i class="far fa-comments mr-5"></i>
-          <div class="flex flex-col">
-            <div class="text-xl font-medium">Excellente communication</div>
-            <div>
-              90 % de voyageurs récents ont attribué 5 étoiles à Bernard pour la
-              communication.
-            </div>
+          <div class="w-16 h-16 rounded-full overflow-hidden">
+            <img
+              src="static/images/users_pic/user_1.jpg"
+              alt="Photo de profil"
+              class="w-full h-full object-cover"
+            />
           </div>
         </div>
-      </div>
-      <div class="h-0.5 bg-gray-400"></div>
-      <div>
-        <p class="truncate">
-          Villa d'architecture contemporaine, espaces générteux et fonctionnels.
-          Séjour de 45 M2, 3 chambres (lit de 200x180) et leur salle de douche
-          spacieuse. on y vit confortablement sans jamais perdre la mer du
-          regard. Cuisine ouverte bien équipée, salon, face à la mer, poele à
-          bois. Arriére cuisine avec lave linge et séche linge Grande TV
-          canalsat,enceinte bluetooth, WIFI Terrasse spacieuse avec table,
-          chaises, salon de détente et plancha. Parking , 2voitures, avec
-          portail électrique
-        </p>
-        <button class="underline font-bold" onclick="openPopupDescription()">
-          En savoir plus
-        </button>
-        <div
-          id="popup_description"
-          class="fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center bg-gray-800 bg-opacity-50 p-4 hidden"
-        >
-          <div
-            id="popup_content_description"
-            class="bg-white p-4 max-w-xl hidden"
-          ></div>
-        </div>
-      </div>
-      <div class="h-0.5 bg-gray-400"></div>
-      <div>
+        <div class="h-0.5 bg-gray-400"></div>
         <div>
-          <div class="flex gap-2 items-center">
-            <i class="fas fa-mountain text-xl"></i>
-            <p>Vue sur la mer</p>
+          <div class="flex flex-row mt-2 items-center">
+            <i class="fas fa-trophy mr-5"></i>
+            <div class="flex flex-col">
+              <p class="text-xl font-medium">Hôte très bien évalué</p>
+              <div>
+                Bernard a reçu des évaluations 5 étoiles de 95 % de voyageurs
+                récents.
+              </div>
+            </div>
+            <div>
+              <div></div>
+              <div></div>
+            </div>
           </div>
-          <div class="flex gap-2 items-center">
-            <i class="fas fa-faucet text-xl"></i>
-            <p>Cuisine</p>
+          <div class="flex flex-row mt-2 items-center">
+            <i class="far fa-comments mr-5"></i>
+            <div class="flex flex-col">
+              <div class="text-xl font-medium">Excellente communication</div>
+              <div>
+                90 % de voyageurs récents ont attribué 5 étoiles à Bernard pour
+                la communication.
+              </div>
+            </div>
           </div>
-          <div class="flex gap-2 items-center">
-            <i class="fas fa-wifi text-xl"></i>
-            <p>WIFI</p>
+        </div>
+        <div class="h-0.5 bg-gray-400"></div>
+        <div>
+          <p class="truncate">
+            Villa d'architecture contemporaine, espaces générteux et
+            fonctionnels. Séjour de 45 M2, 3 chambres (lit de 200x180) et leur
+            salle de douche spacieuse. on y vit confortablement sans jamais
+            perdre la mer du regard. Cuisine ouverte bien équipée, salon, face à
+            la mer, poele à bois. Arriére cuisine avec lave linge et séche linge
+            Grande TV canalsat,enceinte bluetooth, WIFI Terrasse spacieuse avec
+            table, chaises, salon de détente et plancha. Parking , 2voitures,
+            avec portail électrique
+          </p>
+          <button class="underline font-bold" onclick="openPopupDescription()">
+            En savoir plus
+          </button>
+          <div
+            id="popup_description"
+            class="fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center bg-gray-800 bg-opacity-50 p-4 hidden"
+          >
+            <div
+              id="popup_content_description"
+              class="bg-white p-4 max-w-xl hidden"
+            ></div>
           </div>
-          <div class="flex gap-2 items-center">
-            <i class="fas fa-car text-xl"></i>
-            <p>Parking gratuit sur place</p>
-          </div>
-          <div class="flex gap-2 items-center">
-            <i class="fas fa-paw text-xl"></i>
-            <p>Animaux acceptés</p>
-          </div>
-          <div class="flex gap-2 items-center">
-            <i class="far fa-compass text-xl"></i>
-            <p>Détecteur de monoxyde de carbone</p>
+        </div>
+        <div class="h-0.5 bg-gray-400"></div>
+        <div>
+          <div>
+            <div class="flex gap-2 items-center">
+              <i class="fas fa-mountain text-xl"></i>
+              <p>Vue sur la mer</p>
+            </div>
+            <div class="flex gap-2 items-center">
+              <i class="fas fa-faucet text-xl"></i>
+              <p>Cuisine</p>
+            </div>
+            <div class="flex gap-2 items-center">
+              <i class="fas fa-wifi text-xl"></i>
+              <p>WIFI</p>
+            </div>
+            <div class="flex gap-2 items-center">
+              <i class="fas fa-car text-xl"></i>
+              <p>Parking gratuit sur place</p>
+            </div>
+            <div class="flex gap-2 items-center">
+              <i class="fas fa-paw text-xl"></i>
+              <p>Animaux acceptés</p>
+            </div>
+            <div class="flex gap-2 items-center">
+              <i class="far fa-compass text-xl"></i>
+              <p>Détecteur de monoxyde de carbone</p>
+            </div>
           </div>
         </div>
       </div>
+      <section id="booking">
+        <div>PA</div>
+      </section>
     </section>
     <script src="static/scripts/script.js"></script>
   </body>
